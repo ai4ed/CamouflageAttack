@@ -1,0 +1,35 @@
+task_name: "Llama-3.1-8B-Instruct-Test"
+
+model:
+  name: "Llama-3.1-8B-Instruct"
+  path: "meta-llama/Llama-3.1-8B-Instruct"
+  devices:
+    [
+      "cuda:0",
+      "cuda:1",
+      "cuda:2",
+      "cuda:3",
+    ]
+  dtype: "bfloat16"
+  max_new_tokens: 1024
+
+data:
+  name: "AdvBench"
+  path: "./CamouflageAttack/data/advbench.jsonl"
+
+strategy:
+  num_steps: 500
+  search_width: 64
+  topk: 2048
+  seed: 114514
+  mu: 0.4
+  allow_non_ascii: false
+  early_stop: true
+  verbosity: "WARNING"
+  use_prefix_cache: true
+
+log:
+  dir: "./CamouflageAttack/logs/"
+
+result:
+  dir: "./CamouflageAttack/results/"

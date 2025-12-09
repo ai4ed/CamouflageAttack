@@ -15,7 +15,7 @@ model:
 
 data:
   name: "AdvBench"
-  path: "./CamouflageAttack/data/advbench.jsonl"
+  path: "./data/advbench.jsonl"
 
 strategy:
   num_steps: 500
@@ -29,7 +29,7 @@ strategy:
   use_prefix_cache: true
 
 log:
-  dir: "./CamouflageAttack/logs/"
+  dir: "./logs/"
 
 result:
-  dir: "./CamouflageAttack/results/"
+  dir: "./results/"

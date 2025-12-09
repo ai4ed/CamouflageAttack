@@ -11,7 +11,7 @@ from agents import run, StrategyConfig
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("config-path", type=str)
+    parser.add_argument("config_path", type=str)
     args = parser.parse_args()
     return args
 

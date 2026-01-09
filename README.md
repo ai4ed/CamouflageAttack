@@ -184,6 +184,21 @@ Results are saved as JSONL files with the following structure:
 }
 ```
 
+## Citation
+
+If you find this repository useful in your research, please consider citing our work:
+
+```bibtex
+@article{li2026synergistic,
+  title={A Synergistic Multi-Agent Framework for Camouflage Attack on Large Language Models},
+  author={Li, Xueyi and Zhou, Zhuoneng and Liu, Zitao and Wu, Yongdong and Luo, Weiqi},
+  journal={IEEE Transactions on Audio Speech and Language Processing},
+  volume={34},
+  pages={299-310},
+  year={2026}
+}
+```
+
 
 ## License
 
